@@ -1,0 +1,21 @@
+.exam-countdown {
+  padding: 18px 22px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.exam-days {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.exam-date {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.exam-missing {
+  font-size: 14px;
+  color: #ef4444;
+}

@@ -1,0 +1,146 @@
+.subject-wrapper {
+  min-height: 100vh;
+  padding: 100px 50px 50px;
+  background: #f8fafc;
+}
+
+/* ================= SUBJECT HEADER ================= */
+
+.subject-header {
+  margin-bottom: 40px;
+}
+
+.subject-header h1 {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.subject-header p {
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* ================= RESOURCE CARDS ================= */
+
+.resource-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.resource-card {
+  padding: 22px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+
+  font-weight: 600;
+  text-align: center;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18);
+}
+
+/* ================= CHAPTER SECTION ================= */
+
+.chapter-section {
+  margin-top: 10px;
+}
+
+.chapter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.chapter-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.chapter-header span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.chapter-subtitle {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 22px;
+}
+
+/* ================= CHAPTER GRID ================= */
+
+.chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px 32px;
+}
+
+/* ================= CHAPTER CARD ================= */
+
+.chapter-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 22px;
+  border-radius: 16px;
+
+  background: linear-gradient(135deg, #ffe29f, #ffcc70);
+  box-shadow: 0 14px 30px rgba(255, 183, 3, 0.35);
+
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.chapter-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 45px rgba(255, 183, 3, 0.45);
+}
+
+/* ================= CHAPTER CONTENT ================= */
+
+.chapter-left strong {
+  display: block;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.chapter-left span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.chapter-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chapter-right small {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* STATUS DOT */
+.chapter-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #60a5fa;
+}

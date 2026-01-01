@@ -1,0 +1,171 @@
+.chapter-wrapper {
+  min-height: 100vh;
+  padding: 100px 50px 50px;
+  background: #f8fafc;
+}
+
+/* HEADER */
+.chapter-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.chapter-header p {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* GLASS */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(18px);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* NOTES */
+.notes-section ul {
+  padding-left: 20px;
+}
+
+.notes-section li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* MCQS */
+.mcq-card {
+  margin-top: 20px;
+}
+
+.mcq-question {
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.mcq-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.mcq-option {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mcq-option:hover {
+  background: #f3f4f6;
+}
+
+.mcq-option.correct {
+  background: #dcfce7;
+  border-color: #22c55e;
+}
+
+.mcq-option.wrong {
+  background: #fee2e2;
+  border-color: #ef4444;
+}
+
+.mcq-answer {
+  margin-top: 10px;
+  color: #16a34a;
+  font-size: 14px;
+}
+
+
+.chapter-nav {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-btn {
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.complete-btn {
+  padding: 14px 22px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background: #22c55e;
+  color: white;
+}
+
+.complete-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.complete-btn {
+  padding: 14px 22px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background: #22c55e;
+  color: white;
+}
+
+.complete-btn.completed {
+  background: #ef4444; /* red for uncheck */
+}
+
+.submit-btn {
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+.submit-btn:hover:enabled {
+  background: #1d4ed8;
+}
+
+.mcq-option.selected {
+  border: 2px solid #2563eb;
+  background-color: #eff6ff;
+  color: #1e3a8a;
+}
+.mcq-option.selected.correct {
+  background: #dcfce7;
+  border-color: #22c55e;
+  color: #166534;
+}
+
+.mcq-explanation {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-left: 4px solid #2563eb;
+  background-color: #f8fafc;
+  font-size: 14px;
+  color: #374151;
+  border-radius: 6px;
+}

@@ -1,0 +1,63 @@
+.board-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.board-glass {
+  width: 90%;
+  max-width: 900px;
+  padding: 60px;
+  border-radius: 28px;
+
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px);
+
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.board-glass h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+.board-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.board-card {
+  padding: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  transition: all 0.25s ease;
+}
+
+.board-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.board-card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.board-card p {
+  font-size: 14px;
+  color: #6b7280;
+}

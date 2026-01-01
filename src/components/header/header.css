@@ -1,0 +1,89 @@
+.home-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+  z-index: 1000;
+}
+
+/* LOGO */
+.header-logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--text-primary);
+}
+
+/* NAV */
+.header-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.header-nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  position: relative;
+}
+
+/* Hover underline */
+.header-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+.header-nav a:hover::after {
+  width: 100%;
+}
+
+/* ACTIONS */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* THEME BUTTON */
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  font-size: 16px;
+  background: var(--glass-bg);
+  color: var(--text-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: var(--glass-shadow);
+  transition: transform 0.25s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.08);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+}
